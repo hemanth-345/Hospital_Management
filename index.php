@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>STAR HOSPITAL</title>
+	<style>
+		body
+		{
+			margin-right: 10%;
+			margin-left: 10%;
+			background-image: url("bg.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+  			background-size: cover;
+		}
+		li:hover
+		{
+			background-color:black;
+		}
+		li
+		{
+			width: 15%;
+			color: white;
+			position: relative;
+			float: left;
+			top: 2px;
+			bottom: 2px;
+			left: 2px;
+			right: 2px;
+			background-color: #864ede;
+			list-style-type: none;
+			margin-left: 2px;
+			margin-right: 2px;
+			padding-top: 5px;
+			padding-bottom: 2px;
+		}
+		.header
+		{
+			margin-left: 45px;
+			margin-right: 45px;
+			color: #864ede;
+		}
+		.footer
+		{
+			width: 100%;
+			height: 50px;
+			background-color: #864ede;
+		}
+		 @media(max-width: 685px){
+        nav{ 
+        padding:5px;
+        }
+        nav ul li{
+           display:block;
+          font-size:15px;
+          padding-right:4.5%;
+          padding-left: 4.5%;
+          margin-top: 4px;
+          margin-bottom: 8px;
+          width:20%;
+          }
+      @media(max-width: 450px){
+        nav{ 
+        padding:5px;
+        }
+        nav ul li{
+          display:block;
+          font-size:7px;
+          padding-right:3.5%;
+          padding-left: 3.5%;
+          padding-top: 4px;
+          padding-bottom: 4px;
+          width:10%;
+          }
+	</style>
+	<link rel="icon" href="Capture.ico" />
+</head>
+<body>
+<div class="header">
+	<div style="float: left; padding: 5px; width: 30% ">
+		<img src="STAR HOSPITAL-logos_white.png" alt="logo not avilable" align="center" height="200px">
+	</div>
+	<div style="float: right; padding: 5px; width: 68.2% ">
+		<h1 style="font-size: 75px"><font face="Bernard MT Condensed" style="float: right;-webkit-text-stroke-width: 2px;-webkit-text-stroke-color: black;">
+			<b>STAR HOSPITAL</b></font></h1>
+		<br><br><br><br>
+		<h3><p><font color="black" face="Brush Script Std" style="float: right;"><b>KEEPING YOU WELL</b></font></p></h3>
+	</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+<nav>
+	<ul><li><center><a href="home.html" target="main" style="text-decoration: none; color: white;">HOME</a></center></li></ul>
+	<ul><li><center><a href="acadamics.php" target="main" style="text-decoration: none; color: white;">ACADAMIC</center></li></ul>
+	<ul><li><center><a href="hospital.html" target="main" style="text-decoration: none; color: white;">HOSPITAL</center></li></ul>
+	<ul><li><center><a href="employees.php" target="main" style="text-decoration: none; color: white;">EMPLOYEES</center></li></ul>
+	<ul><li><center><a href="rooms.php" target="main" style="text-decoration: none; color: white;">ROOMS</center></li></ul>
+	<ul><li><center><a href="contact.html" target="main" style="text-decoration: none; color: white;">CONTACT US</center></li></ul>
+</nav>
+<br>
+<br>
+<div>
+	<iframe src="home.html" scrolling="yes" width="100%" height="1000px" style="background-color: #ffffff5e;border-radius: 15px; border:2px solid #864ede;" name="main" id="main" frameborder="0" onload="resizeIframe(this)"></iframe>
+</div>
+<div class="footer">
+	<p>Copyright © <b>STAR Medical College & Hospital</b>. All rights reserved.</p>
+</div>
+</body>
+</html>

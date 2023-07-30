@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hospital</title>
+	<style type="text/css">
+		*{
+		 font-family: Verdana,Arial,Helvetica;
+		}
+		.sticky{
+            
+				top:0px;
+				
+				position: sticky;
+				float: left;
+			    width:100%; 
+              padding-top: 5px;
+              padding-bottom: 5px;
+              background-color: #ffffff70;
+
+			}
+		.container {
+		     		
+             position: relative;
+             width:100%;
+             
+            }
+            .mySlides {
+            display: none;
+            }
+             .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+			background-color: rgb(56, 56, 56);
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+           
+            }
+            .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+            }
+           .prev:hover,
+           .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            }
+            .caption-container {
+			  text-align: center;
+
+			  background-color: #222;
+			  padding-top:10px;
+			  padding-bottom: 10px;
+			  color: white;
+			  }
+			  .cursor {
+            cursor: pointer;
+        	}
+        	.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+             .column {
+             float: left;
+             width: 16.66%;
+             }
+	</style>
+	<script>
+			var slideIndex = 1;
+			currentSlide(slideIndex);
+			function plusSlides(n) {
+			showSlides(slideIndex += n);
+			}
+			function currentSlide(n) {
+			showSlides(slideIndex = n);
+			}
+			function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("demo");
+			var captionText = document.getElementById("caption");
+			if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+			captionText.innerHTML = dots[slideIndex-1].alt;
+			}
+			</script>
+</head>
+<body onload="showSlides(slideIndex);">
+	<div class="sticky">
+	<p>
+	<h2><b><font color="#864ede"><center>STAR Medical College and Hospital</center></font></b></h2>
+</p>
+</div>
+<hr>
+	<div class="container">
+<div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="img1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="img2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="img3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="img4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="img5.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="img6.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Hospital">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img2.jpg" style="width:100%" onclick="currentSlide(2)" alt="BED facilities">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img3.jpg" style="width:100%" onclick="currentSlide(3)" alt="ADVANCED TECNOLOGY">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img4.jpg" style="width:100%" onclick="currentSlide(4)" alt="BEST EQUIPMENT">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img5.jpg" style="width:100%" onclick="currentSlide(5)" alt="BEST AREA">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img6.jpg" style="width:100%" onclick="currentSlide(6)" alt="SPECIAL CORONA WORDS">
+    </div>
+  </div>
+</div>
+<p>
+The STAR Medical College and Hospital was established in the year 1968. Since its inception, the SMC Hospital is rendering its yeomen’s services to the suffering community of the entire southern part of Assam and its neighbouring states. In the year 1971, the Civil Hospital of Silchar, situated in the heart of the city about 6 kms away from the permanent college building, was taken over as the teaching hospital of the STAR Medical College. Thereafter, in 1977-78, the main hospital building complex at its permanent site was commissioned.
+</p>
+<p>
+The huge three-storied hospital building houses the following departments including their out-patient departments (O.P.D.), wards, operation theatres, X-Rays, Laboratory facilities etc.:
+</p>
+<ol>
+<li>Casualty Department</li>
+<li> Various O.P.D.s</li>
+<li> Obstetrics & Gynaecology Dept.</li>
+<li>Medicine Dept.</li>
+<li> Radiology Dept.</li>
+<li> E.N.T. Dept.</li>
+<li> Ophthalmology Dept.</li>
+<li> Orthopaedic Dept.</li>
+<li> General Surgery Dept.</li>
+<li>Paediatrics Dept.</li>
+<li>Cardiology Dept.</li>
+<li>Dermatology Dept.</li>
+<li>Psychhiatry Dept.</li>
+<li>Clinical Pathology Dept.</li>
+<li>Blood Bank</li>
+</ol>
+<p>
+There is another separate three-storied block for the Dept. of Pathology and Microbiology. The Microbiology dept. will be shifted to its permanent building as soon as it is commissioned.
+</p>
+<p>
+The departments of Tuberculosis and Chest Diseases as well as the isolation wards are situated in separate buildings within the college campus a little away from the main hospital building.
+</p>
+<p>
+The Central Library of the college is presently housed in the ground floor of the main hospital building.
+</P>
+</body>
+</html>

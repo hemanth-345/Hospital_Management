@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>RECORD ENTRY</title>
+<style>
+	*{
+		 font-family: Verdana,Arial,Helvetica;
+	}
+	.header
+	{
+		height: 70px;
+		width: 100%;
+		border: 2px solid black;
+		color: #864ede;
+	}
+	.table
+	{
+		height: 580x;
+		width: 60%;
+		left: 20%;
+		right: 20%;
+		top: 25px;
+		position: relative;
+		float: center;
+	}
+	.footer
+	{
+		background-color: #864ede;
+		height: 20px;
+		top: 20PX;
+		width:100%;
+		position: relative;
+		color: white;
+	}
+	button{
+		background-color: #864ede;
+		color: white;
+		border-radius:  20px solid black;
+        padding: 5px;
+        cursor: pointer;
+        border-color: unset;
+        font-size: 20px;
+        font-family: monospace;
+	}
+	.star{
+		color: red;
+	}
+	input{
+		border: 2px solid #864ede;
+		border-radius: 5PX;
+	}
+</style>
+<script type="text/javascript">
+	function confirm()
+	{
+		alert("The data has recorded");
+	}
+</script>
+</head>
+<body>
+<div class="header">
+<h1 align="center"><b>FILL THE FOLLOWING FORM</b></h1>
+</div>
+<form>
+<div class="table">
+<table algin="center" border="0" width="700" height="500" cellpadding="5" cellspacing="5">
+	<tr>
+		<td><b>PATIENT NAME<span class="star">*</span></b></td>
+		<td><input type="text" id="P_NAME" placeholder="PATIENT NAME" name="name" required></td>
+	</tr>
+	<tr>
+		<td><B>GENDER<span class="star">*</span></B></td>
+		<td><input type="radio" name="gender" value="male" required>MALE <input type="radio" name="gender" value="female" required>FEMALE</td>
+	</tr>
+	<tr>
+		<td><B>DOCTOR NAME<span class="star">*</span></B></td>
+		<td>
+			<select id="doc_name">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td><B>RECEPTIONIST<span class="star">*</span></B></td>
+		<td>
+			<select id="RECEPTIONIST">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+			</select>
+		</td>
+	</tr>
+	<TR>
+	<TD><input onclick="confirm()" type="submit" value="SUBMIT">&nbsp&nbsp&nbsp&nbsp
+	<input type="RESET" value="RESET">
+</TR>
+</table>
+</div>
+</form>
+<br><br><br><br><br><br><br>
+<p id="demo"></p>
+<div class="footer">
+	<p><b><marquee>THE ABOVE INFORMATION IS HIGHLY CONFIDENTIAL AND NOT BE LEAKED IN ANY MANNER</marquee></b></p>
+</div>
+</body>
+</html>

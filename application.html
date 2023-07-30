@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>DETAILS OF THE STUDENTS</title>
+<style>
+	*{
+		 font-family: Verdana,Arial,Helvetica;
+	}
+	.header
+	{
+		height: 70px;
+		width: 100%;
+		border: 2px solid black;
+		color: #864ede;
+	}
+	.table
+	{
+		height: 580x;
+		width: 60%;
+		left: 20%;
+		right: 20%;
+		top: 25px;
+		position: relative;
+		float: center;
+	}
+	.footer
+	{
+		background-color: #864ede;
+		height: 20px;
+		top: 20PX;
+		width:100%;
+		position: relative;
+		color: white;
+	}
+	button{
+		background-color: #864ede;
+		color: white;
+		border-radius:  20px solid black;
+        padding: 5px;
+        cursor: pointer;
+        border-color: unset;
+        font-size: 20px;
+        font-family: monospace;
+	}
+	.star{
+		color: red;
+	}
+	input{
+		border: 2px solid #864ede;
+		border-radius: 5PX;
+	}
+</style>
+<script type="text/javascript">
+	function num()
+	{
+		var k=document.getElementById('mobile').value;
+		var i=0,n;
+		while (k!=0)
+		{
+			n=k%10;
+			k=(k-n)/10;
+			i=i+1;
+		}
+		if (i!=10) 
+		{
+			window.alert("enter valid phone number");
+		}
+	}
+	function rank() {
+		var k=document.getElementById('number').value;
+		if (k>9999) {
+			alert("your not eligible to this college");
+			document.write("<h2><center>NOTE</center></h2><hr /><center>sry,your not eligible for this college. because our college cloceing rank is 999 al india open category. And we do not support any reservation. so it is better to improve ur self to have a set in our college in the next year</center>")
+	}
+	}
+</script>
+</head>
+<body>
+<div class="header">
+<h1 align="center"><b>FILL THE FOLLOWING FORM</b></h1>
+</div>
+<form action="submited.html">
+<div class="table">
+<table algin="center" border="0" width="700" height="500" cellpadding="5" cellspacing="5">
+	<tr>
+		<td><b>NAME<span class="star">*</span></b></td>
+		<td><input type="text" placeholder="name" name="name" required></td>
+	</tr>
+	<tr>
+		<td><B>ADDRESS<span class="star">*</span></B></td>
+		<td><TEXTAREA placeholder="include city,state,street,pincode" required></TEXTAREA></td>
+	</tr>
+	<tr>
+		<td><B>BIRTH DATE<span class="star">*</span></B></td>
+		<td><input type="date" required></td>
+	</tr>
+	<tr>
+		<td><B>MAIL ID<span class="star">*</span></B></td>
+		<td><input type="email" name="mail id" required></td>
+	</tr>
+	<tr>
+		<td><B>MOBILE NUMBER<span class="star">*</span></B></td>
+		<td><input type="tel" name="mobile" id="mobile" pattern="[0-9]{10}" required></td>
+	</tr>
+	<tr>
+		<td><B>HOBBIES<span class="star">*</span></B></td>
+		<td><input type="text" onclick="num()" name="hobbies" required></td>
+	</tr>
+	<tr>
+		<td><B>GENDER<span class="star">*</span></B></td>
+		<td><input type="radio" name="gender" value="male" required>male <input type="radio" name="gender" value="female" required>female</td>
+	</tr>
+	<tr>
+		<td><B>SEMESTERS<span class="star">*</span></B></td>
+		<td>
+			<select>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td><B>NEET RANK CARD<span class="star">*</span></B></td>
+		<td>
+			<input type="file" name="file" id="file"  required>
+		</td>
+	</tr>
+	<TR>
+		<TD><B>NEET RANK<SPAN class="star">*</SPAN></B></TD>
+		<td><input type="number" name="number" id="number" pattern="[0-9]{4}" required></td>
+	</TR>
+	<tr>
+		<td><B>EXTRACURICULAM<span class="star">*</span></B></td>
+		<td><input type="checkbox" name="subjectlist" onclick="rank()">DANCING<input type="checkbox" name="subjectlist" onclick="rank()">SINGING<input type="checkbox" name="subjectlist" onclick="rank()">COMEDIAN<input type="checkbox" name="subjectlist" onclick="rank()">ACTOR<input type="checkbox" name="subjectlist" onclick="rank()">NONE
+		</td>
+	</tr>
+	<TR>
+	<TD><button>SUBMIT</button>&nbsp&nbsp&nbsp&nbsp<button>RESET</button></TD>
+</TR>
+</table>
+</div>
+</form>
+<br><br><br><br><br><br><br>
+<p id="demo"></p>
+<div class="footer">
+	<p><b><marquee>THE ABOVE INFORMATION IS HIGHLY CONFIDENTIAL AND NOT BE LEAKED IN ANY MANNER</marquee></b></p>
+</div>
+</body>
+</html>
